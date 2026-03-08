@@ -135,3 +135,18 @@
                 if (avg >= 12) {
                     riskLevelDisplay.innerHTML = "評估結果：<span style='color:#c92a2a;'>高跌倒風險</span>";
                     report.className = "report-box high-risk";
+                } else {
+                    riskLevelDisplay.innerHTML = "評估結果：<span style='color:#2b8a3e;'>行動力良好</span>";
+                    report.className = "report-box low-risk";
+                }
+            }
+        }
+    });
+
+    resetBtn.addEventListener('click', () => {
+        location.reload(); 
+    });
+</script>
+
+</body>
+</html>
